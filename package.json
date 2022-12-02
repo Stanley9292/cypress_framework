@@ -1,0 +1,49 @@
+{
+  "name": "tester-assessment",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint . --ext .js,.jsx",
+    "playwright:ci": "npx playwright test --reporter=list",
+    "playwright": "npx playwright test --reporter=list --headed",
+    "cypress": "cypress open --config-file=cypress.config.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "formik": "^2.2.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@playwright/test": "^1.25.0",
+    "@types/jest": "^28.1.8",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "cypress": "^10.6.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-playwright": "^0.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "playwright": "^1.25.0",
+    "prettier": "^2.7.1",
+    "vite": "^3.0.9"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix"
+  }
+}
